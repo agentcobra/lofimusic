@@ -147,6 +147,50 @@ func getLiveRadios() []liveRadio {
 			},
 		},
 		{
+			Slug:  "synthwave-boy",
+			Name:  "Synthwave Boy",
+			Owner: "Lofi Girl",
+			URL:   "https://youtu.be/M4xDzrJKXOOY",
+			Cards: []string{
+				"Lofi girl is a radio that broadcasts lo-fi hip hop songs created by a French fellow named Dimitri in 2017.",
+				`Animation and desing are made by Carole, YiChen Shen Juan, Andreas Provoost, Margaux Peltat, Enrico Camerra, Jaka Prawira, Nathalie Baraton and Adrian Kirby from Lofi Studio".`,
+			},
+			Links: []socialLink{
+				{
+					Slug: "website",
+					URL:  "https://lofigirl.com",
+				},
+				{
+					Slug: "youtube",
+					URL:  "https://youtu.be/4xDzrJKXOOY",
+				},
+				{
+					Slug: "spotify",
+					URL:  "https://open.spotify.com/playlist/1YIe34rcmLjCYpY9wJoM2p",
+				},
+				{
+					Slug: "discord",
+					URL:  "https://discord.com/invite/lofigirl",
+				},
+				{
+					Slug: "reddit",
+					URL:  "https://www.reddit.com/r/LofiGirl",
+				},
+				{
+					Slug: "instagram",
+					URL:  "https://www.instagram.com/lofigirl",
+				},
+				{
+					Slug: "facebook",
+					URL:  "https://www.facebook.com/lofigirl",
+				},
+				{
+					Slug: "twitter",
+					URL:  "https://twitter.com/lofigirl",
+				},
+			},
+		},
+		{
 			Slug:  "chillhop",
 			Name:  "Chillhop Raccoon",
 			Owner: "Chillhop Music",
@@ -431,12 +475,12 @@ func getLiveRadios() []liveRadio {
 			Slug:  "closedonsunday-starwars",
 			Name:  "Star Wars Sunday",
 			Owner: "Closed on Sunday",
-			URL:   "https://youtu.be/zFTFx6nclUY",
+			URL:   "https://youtu.be/ccl5bozJOHw",
 			Cards: []string{},
 			Links: []socialLink{
 				{
 					Slug: "youtube",
-					URL:  "https://youtu.be/zFTFx6nclUY",
+					URL:  "https://youtu.be/ccl5bozJOHw",
 				},
 				{
 					Slug: "spotify",
