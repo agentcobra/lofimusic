@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/maxence-charriere/go-app/v9/pkg/app"
-	"github.com/maxence-charriere/go-app/v9/pkg/ui"
+	"github.com/maxence-charriere/go-app/v10/pkg/app"
+	"github.com/maxence-charriere/go-app/v10/pkg/ui"
 	"golang.org/x/exp/rand"
 )
 
@@ -42,7 +42,7 @@ func (r *radio) OnNav(ctx app.Context) {
 }
 
 func (r *radio) OnResize(ctx app.Context) {
-	r.ResizeContent()
+	ctx.ResizeContent()
 }
 
 func (r *radio) init(ctx app.Context) {
@@ -126,12 +126,14 @@ func (r *radio) Render() app.UI {
 								Middle().
 								Content(
 									app.If(r.isUpdateAvailable,
-										newLink().
-											Class("link-update").
-											Class("glow").
-											Label("Update").
-											Icon(newSVGIcon().RawSVG(downloadSVG)).
-											OnClick(r.onUpdateClick),
+										func() app.UI {
+											return newLink().
+												Class("link-update").
+												Class("glow").
+												Label("Update").
+												Icon(newSVGIcon().RawSVG(downloadSVG)).
+												OnClick(r.onUpdateClick)
+										},
 									),
 								),
 						),

@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/maxence-charriere/go-app/v9/pkg/app"
-	"github.com/maxence-charriere/go-app/v9/pkg/errors"
-	"github.com/maxence-charriere/go-app/v9/pkg/ui"
+	"github.com/maxence-charriere/go-app/v10/pkg/app"
+	"github.com/maxence-charriere/go-app/v10/pkg/errors"
+	"github.com/maxence-charriere/go-app/v10/pkg/ui"
 )
 
 const (
@@ -191,12 +191,6 @@ func (p *youTubePlayer) onStateChange(ctx app.Context, args []app.Value) {
 		p.isBuffering = true
 		p.err = nil
 	}
-
-	if p.IonPlaybackChange != nil {
-		ctx.Emit(func() {
-			p.IonPlaybackChange(ctx, p.isPlaying)
-		})
-	}
 }
 
 func (p *youTubePlayer) onError(ctx app.Context, args []app.Value) {
@@ -222,8 +216,8 @@ func (p *youTubePlayer) onError(ctx app.Context, args []app.Value) {
 	}
 
 	p.err = errors.New("youtube player error").
-		Tag("code", code).
-		Tag("description", msg)
+		WithTag("code", code).
+		WithTag("description", msg)
 
 	fmt.Println("error:", p.err)
 }
@@ -255,20 +249,23 @@ func (p *youTubePlayer) Render() app.UI {
 						),
 				),
 			app.If(!p.isPlaying || p.isBuffering || p.err != nil,
-				app.Div().
-					Class("youtube-noplay").
-					Class("fill").
-					Class("background-overlay").
-					Body(
-						newLoader().
-							Class("hspace-out").
-							Class("vspace-stretch").
-							Size(loaderSize).
-							Title("Buffering").
-							Description(p.radio.Name).
-							Loading(p.isBuffering).
-							Err(p.err),
-					),
+
+				func() app.UI {
+					return app.Div().
+						Class("youtube-noplay").
+						Class("fill").
+						Class("background-overlay").
+						Body(
+							newLoader().
+								Class("hspace-out").
+								Class("vspace-stretch").
+								Size(loaderSize).
+								Title("Buffering").
+								Description(p.radio.Name).
+								Loading(p.isBuffering).
+								Err(p.err),
+						)
+				},
 			),
 			ui.Stack().
 				Class("youtube-controls").
@@ -287,17 +284,23 @@ func (p *youTubePlayer) Render() app.UI {
 						Disabled(!p.canBack).
 						OnClick(p.onBackClicked),
 					app.If(p.isPlaying || p.isBuffering,
-						newControl().Icon(newSVGIcon().
-							Size(controlIconSize).
-							RawSVG(pauseSVG)).
-							Disabled(p.player == nil).
-							OnClick(p.onPauseClicked),
+						func() app.UI {
+							return newControl().
+								Icon(newSVGIcon().
+									Size(controlIconSize).
+									RawSVG(pauseSVG)).
+								Disabled(p.player == nil).
+								OnClick(p.onPauseClicked)
+						},
 					).Else(
-						newControl().Icon(newSVGIcon().
-							Size(controlIconSize).
-							RawSVG(playSVG)).
-							Disabled(p.player == nil || p.isBuffering).
-							OnClick(p.onPlayClicked),
+						func() app.UI {
+							return newControl().
+								Icon(newSVGIcon().
+									Size(controlIconSize).
+									RawSVG(playSVG)).
+								Disabled(p.player == nil || p.isBuffering).
+								OnClick(p.onPlayClicked)
+						},
 					),
 					newControl().
 						Class("control-main").
@@ -306,29 +309,41 @@ func (p *youTubePlayer) Render() app.UI {
 							RawSVG(shuffleSVG)).
 						OnClick(p.onShuffleClicked),
 					app.If(p.volume.Value > 60,
-						newControl().Icon(newSVGIcon().
-							Size(controlIconSize).
-							RawSVG(soundHighSVG)).
-							Disabled(p.player == nil).
-							OnClick(p.onSoundClicked),
+						func() app.UI {
+							return newControl().
+								Icon(newSVGIcon().
+									Size(controlIconSize).
+									RawSVG(soundHighSVG)).
+								Disabled(p.player == nil).
+								OnClick(p.onSoundClicked)
+						},
 					).ElseIf(p.volume.Value > 20,
-						newControl().Icon(newSVGIcon().
-							Size(controlIconSize).
-							RawSVG(soundMediumSVG)).
-							Disabled(p.player == nil).
-							OnClick(p.onSoundClicked),
+						func() app.UI {
+							return newControl().
+								Icon(newSVGIcon().
+									Size(controlIconSize).
+									RawSVG(soundMediumSVG)).
+								Disabled(p.player == nil).
+								OnClick(p.onSoundClicked)
+						},
 					).ElseIf(p.volume.Value > 0,
-						newControl().Icon(newSVGIcon().
-							Size(controlIconSize).
-							RawSVG(soundLowSVG)).
-							Disabled(p.player == nil).
-							OnClick(p.onSoundClicked),
+						func() app.UI {
+							return newControl().
+								Icon(newSVGIcon().
+									Size(controlIconSize).
+									RawSVG(soundLowSVG)).
+								Disabled(p.player == nil).
+								OnClick(p.onSoundClicked)
+						},
 					).Else(
-						newControl().Icon(newSVGIcon().
-							Size(controlIconSize).
-							RawSVG(soundMutedSVG)).
-							Disabled(p.player == nil).
-							OnClick(p.onSoundClicked),
+						func() app.UI {
+							return newControl().
+								Icon(newSVGIcon().
+									Size(controlIconSize).
+									RawSVG(soundMutedSVG)).
+								Disabled(p.player == nil).
+								OnClick(p.onSoundClicked)
+						},
 					),
 					app.Div().
 						Class("youtube-volume").

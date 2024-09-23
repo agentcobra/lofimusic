@@ -7,10 +7,9 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/maxence-charriere/go-app/v9/pkg/app"
-	"github.com/maxence-charriere/go-app/v9/pkg/cli"
-	"github.com/maxence-charriere/go-app/v9/pkg/errors"
-	"github.com/maxence-charriere/go-app/v9/pkg/logs"
+	"github.com/maxence-charriere/go-app/v10/pkg/app"
+	"github.com/maxence-charriere/go-app/v10/pkg/cli"
+	"github.com/maxence-charriere/go-app/v10/pkg/errors"
 )
 
 const (
@@ -32,9 +31,9 @@ type githubOptions struct {
 
 func main() {
 	for _, l := range getLiveRadios() {
-		app.Route("/"+l.Slug, newRadio())
+		app.Route("/"+l.Slug, func() app.Composer { return newRadio() })
 	}
-	app.Route("/", newRadio())
+	app.Route("/", func() app.Composer { return newRadio() })
 	app.RunWhenOnBrowser()
 
 	ctx, cancel := cli.ContextWithSignals(context.Background(),
@@ -112,15 +111,13 @@ func main() {
 		runLocal(ctx, &h, opts)
 
 	case "github":
-		generateGitHubPages(ctx, &h, githubOpts)
+		generateGitHubPages(&h, githubOpts)
 	}
 
 }
 
 func runLocal(ctx context.Context, h http.Handler, opts options) {
-	app.Logf("%s", logs.New("starting lofimusic app server").
-		Tag("port", opts.Port),
-	)
+	fmt.Printf("Starting lofimusic app server on port %d\n", opts.Port)
 
 	s := http.Server{
 		Addr:    fmt.Sprintf(":%v", opts.Port),
@@ -137,7 +134,7 @@ func runLocal(ctx context.Context, h http.Handler, opts options) {
 	}
 }
 
-func generateGitHubPages(ctx context.Context, h *app.Handler, opts githubOptions) {
+func generateGitHubPages(h *app.Handler, opts githubOptions) {
 	radios := getLiveRadios()
 	slugs := make([]string, len(radios))
 	for i, r := range radios {
