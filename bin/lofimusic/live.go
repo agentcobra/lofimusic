@@ -150,7 +150,7 @@ func getLiveRadios() []liveRadio {
 			Slug:  "synthwave-boy",
 			Name:  "Synthwave Boy",
 			Owner: "Lofi Girl",
-			URL:   "https://youtu.be/M4xDzrJKXOOY",
+			URL:   "https://youtu.be/4xDzrJKXOOY",
 			Cards: []string{
 				"Lofi girl is a radio that broadcasts lo-fi hip hop songs created by a French fellow named Dimitri in 2017.",
 				`Animation and desing are made by Carole, YiChen Shen Juan, Andreas Provoost, Margaux Peltat, Enrico Camerra, Jaka Prawira, Nathalie Baraton and Adrian Kirby from Lofi Studio".`,
