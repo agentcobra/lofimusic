@@ -475,12 +475,12 @@ func getLiveRadios() []liveRadio {
 			Slug:  "closedonsunday-starwars",
 			Name:  "Star Wars Sunday",
 			Owner: "Closed on Sunday",
-			URL:   "https://youtu.be/ccl5bozJOHw",
+			URL:   "https://youtu.be/nwgapenv_4I",
 			Cards: []string{},
 			Links: []socialLink{
 				{
 					Slug: "youtube",
-					URL:  "https://youtu.be/ccl5bozJOHw",
+					URL:  "https://youtu.be/nwgapenv_4I",
 				},
 				{
 					Slug: "spotify",
