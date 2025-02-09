@@ -151,10 +151,7 @@ func getLiveRadios() []liveRadio {
 			Name:  "Synthwave Boy",
 			Owner: "Lofi Girl",
 			URL:   "https://youtu.be/4xDzrJKXOOY",
-			Cards: []string{
-				"Lofi girl is a radio that broadcasts lo-fi hip hop songs created by a French fellow named Dimitri in 2017.",
-				`Animation and desing are made by Carole, YiChen Shen Juan, Andreas Provoost, Margaux Peltat, Enrico Camerra, Jaka Prawira, Nathalie Baraton and Adrian Kirby from Lofi Studio".`,
-			},
+			Cards: []string{},
 			Links: []socialLink{
 				{
 					Slug: "website",
@@ -446,41 +443,41 @@ func getLiveRadios() []liveRadio {
 		// 		},
 		// 	},
 		// },
-		{
-			Slug:  "closedonsunday-pop-culture",
-			Name:  "Pop Culture Sunday",
-			Owner: "Closed on Sunday",
-			URL:   "https://youtu.be/pixAeRe2rk0",
-			Cards: []string{},
-			Links: []socialLink{
-				{
-					Slug: "youtube",
-					URL:  "https://youtu.be/pixAeRe2rk0",
-				},
-				{
-					Slug: "spotify",
-					URL:  "https://open.spotify.com/artist/1LwjR2mIm78OJRTYdkMLl3",
-				},
-				{
-					Slug: "discord",
-					URL:  "https://discord.com/invite/closedonsunday",
-				},
-				{
-					Slug: "instagram",
-					URL:  "https://www.instagram.com/closedonsundayy",
-				},
-			},
-		},
+		//{
+		//	Slug:  "closedonsunday-pop-culture",
+		//	Name:  "Pop Culture Sunday",
+		//	Owner: "Closed on Sunday",
+		//	URL:   "https://youtu.be/pixAeRe2rk0",
+		//	Cards: []string{},
+		//	Links: []socialLink{
+		//		{
+		//			Slug: "youtube",
+		//			URL:  "https://youtu.be/pixAeRe2rk0",
+		//		},
+		//		{
+		//			Slug: "spotify",
+		//			URL:  "https://open.spotify.com/artist/1LwjR2mIm78OJRTYdkMLl3",
+		//		},
+		//		{
+		//			Slug: "discord",
+		//			URL:  "https://discord.com/invite/closedonsunday",
+		//		},
+		//		{
+		//			Slug: "instagram",
+		//			URL:  "https://www.instagram.com/closedonsundayy",
+		//		},
+		//	},
+		//},
 		{
 			Slug:  "closedonsunday-starwars",
 			Name:  "Star Wars Sunday",
 			Owner: "Closed on Sunday",
-			URL:   "https://youtu.be/nwgapenv_4I",
+			URL:   "https://youtu.be/5D5b0-hfzno",
 			Cards: []string{},
 			Links: []socialLink{
 				{
 					Slug: "youtube",
-					URL:  "https://youtu.be/nwgapenv_4I",
+					URL:  "https://youtu.be/5D5b0-hfzno",
 				},
 				{
 					Slug: "spotify",
@@ -500,7 +497,7 @@ func getLiveRadios() []liveRadio {
 			Slug:  "thebootlegboy",
 			Name:  "Bootleg Smoke",
 			Owner: "the bootleg boy",
-			URL:   "https://youtu.be/bLlloaA4b4g",
+			URL:   "https://youtu.be/rPjez8z61rI",
 			Cards: []string{},
 			Links: []socialLink{
 				{
@@ -509,7 +506,7 @@ func getLiveRadios() []liveRadio {
 				},
 				{
 					Slug: "youtube",
-					URL:  "https://youtu.be/bLlloaA4b4g",
+					URL:  "https://youtu.be/rPjez8z61rI",
 				},
 				{
 					Slug: "spotify",
