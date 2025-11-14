@@ -105,7 +105,7 @@ func getLiveRadios() []liveRadio {
 			Slug:  "lofigirl-sleepy",
 			Name:  "Lofi Sleepy Girl",
 			Owner: "Lofi Girl",
-			URL:   "https://youtu.be/rUxyKA_-grg",
+			URL:   "https://youtu.be/xORCbIptqcc",
 			Cards: []string{
 				"Lofi girl is a radio that broadcasts lo-fi hip hop songs created by a French fellow named Dimitri in 2017.",
 				`The animation, made by Juan Pablo Machado, is modeled after Shizuku Tsukishima, a girl character from the Studio Ghibli film "Whisper of the Heart".`,
@@ -118,7 +118,7 @@ func getLiveRadios() []liveRadio {
 				},
 				{
 					Slug: "youtube",
-					URL:  "https://youtu.be/rUxyKA_-grg",
+					URL:  "https://youtu.be/xORCbIptqcc",
 				},
 				{
 					Slug: "spotify",
@@ -261,105 +261,105 @@ func getLiveRadios() []liveRadio {
 				},
 			},
 		},
-		{
-			Slug:  "collegemusic",
-			Name:  "College Girl",
-			Owner: "College Music",
-			URL:   "https://youtu.be/3TASKrR6nrg",
-			Cards: []string{},
-			Links: []socialLink{
-				{
-					Slug: "website",
-					URL:  "https://www.collegemusic.co.uk/",
-				},
-				{
-					Slug: "youtube",
-					URL:  "https://youtu.be/3TASKrR6nrg",
-				},
-				{
-					Slug: "spotify",
-					URL:  "https://open.spotify.com/playlist/32hJXySZtt9YvnwcYINGZ0",
-				},
-				{
-					Slug: "instagram",
-					URL:  "https://www.instagram.com/collegemusic",
-				},
-				{
-					Slug: "facebook",
-					URL:  "https://www.facebook.com/collegemusic",
-				},
-				{
-					Slug: "twitter",
-					URL:  "https://twitter.com/collegemusicyt",
-				},
-			},
-		},
-		{
-			Slug:  "collegemusic-guy",
-			Name:  "College Guy",
-			Owner: "College Music",
-			URL:   "https://youtu.be/QwXHcgZUnFI",
-			Cards: []string{},
-			Links: []socialLink{
-				{
-					Slug: "website",
-					URL:  "https://www.collegemusic.co.uk/",
-				},
-				{
-					Slug: "youtube",
-					URL:  "https://youtu.be/QwXHcgZUnFI",
-				},
-				{
-					Slug: "spotify",
-					URL:  "https://open.spotify.com/playlist/32hJXySZtt9YvnwcYINGZ0",
-				},
-				{
-					Slug: "instagram",
-					URL:  "https://www.instagram.com/collegemusic",
-				},
-				{
-					Slug: "facebook",
-					URL:  "https://www.facebook.com/collegemusic",
-				},
-				{
-					Slug: "twitter",
-					URL:  "https://twitter.com/collegemusicyt",
-				},
-			},
-		},
-		{
-			Slug:  "collegemusic-lonely",
-			Name:  "College Lonely",
-			Owner: "College Music",
-			URL:   "https://youtu.be/dxUtV-zNv9w",
-			Cards: []string{},
-			Links: []socialLink{
-				{
-					Slug: "website",
-					URL:  "https://www.collegemusic.co.uk/",
-				},
-				{
-					Slug: "youtube",
-					URL:  "https://youtu.be/dxUtV-zNv9w",
-				},
-				{
-					Slug: "spotify",
-					URL:  "https://open.spotify.com/playlist/32hJXySZtt9YvnwcYINGZ0",
-				},
-				{
-					Slug: "instagram",
-					URL:  "https://www.instagram.com/collegemusic",
-				},
-				{
-					Slug: "facebook",
-					URL:  "https://www.facebook.com/collegemusic",
-				},
-				{
-					Slug: "twitter",
-					URL:  "https://twitter.com/collegemusicyt",
-				},
-			},
-		},
+// 		{
+// 			Slug:  "collegemusic",
+// 			Name:  "College Girl",
+// 			Owner: "College Music",
+// 			URL:   "https://youtu.be/3TASKrR6nrg",
+// 			Cards: []string{},
+// 			Links: []socialLink{
+// 				{
+// 					Slug: "website",
+// 					URL:  "https://www.collegemusic.co.uk/",
+// 				},
+// 				{
+// 					Slug: "youtube",
+// 					URL:  "https://youtu.be/3TASKrR6nrg",
+// 				},
+// 				{
+// 					Slug: "spotify",
+// 					URL:  "https://open.spotify.com/playlist/32hJXySZtt9YvnwcYINGZ0",
+// 				},
+// 				{
+// 					Slug: "instagram",
+// 					URL:  "https://www.instagram.com/collegemusic",
+// 				},
+// 				{
+// 					Slug: "facebook",
+// 					URL:  "https://www.facebook.com/collegemusic",
+// 				},
+// 				{
+// 					Slug: "twitter",
+// 					URL:  "https://twitter.com/collegemusicyt",
+// 				},
+// 			},
+// 		},
+// 		{
+// 			Slug:  "collegemusic-guy",
+// 			Name:  "College Guy",
+// 			Owner: "College Music",
+// 			URL:   "https://youtu.be/QwXHcgZUnFI",
+// 			Cards: []string{},
+// 			Links: []socialLink{
+// 				{
+// 					Slug: "website",
+// 					URL:  "https://www.collegemusic.co.uk/",
+// 				},
+// 				{
+// 					Slug: "youtube",
+// 					URL:  "https://youtu.be/QwXHcgZUnFI",
+// 				},
+// 				{
+// 					Slug: "spotify",
+// 					URL:  "https://open.spotify.com/playlist/32hJXySZtt9YvnwcYINGZ0",
+// 				},
+// 				{
+// 					Slug: "instagram",
+// 					URL:  "https://www.instagram.com/collegemusic",
+// 				},
+// 				{
+// 					Slug: "facebook",
+// 					URL:  "https://www.facebook.com/collegemusic",
+// 				},
+// 				{
+// 					Slug: "twitter",
+// 					URL:  "https://twitter.com/collegemusicyt",
+// 				},
+// 			},
+// 		},
+// 		{
+// 			Slug:  "collegemusic-lonely",
+// 			Name:  "College Lonely",
+// 			Owner: "College Music",
+// 			URL:   "https://youtu.be/dxUtV-zNv9w",
+// 			Cards: []string{},
+// 			Links: []socialLink{
+// 				{
+// 					Slug: "website",
+// 					URL:  "https://www.collegemusic.co.uk/",
+// 				},
+// 				{
+// 					Slug: "youtube",
+// 					URL:  "https://youtu.be/dxUtV-zNv9w",
+// 				},
+// 				{
+// 					Slug: "spotify",
+// 					URL:  "https://open.spotify.com/playlist/32hJXySZtt9YvnwcYINGZ0",
+// 				},
+// 				{
+// 					Slug: "instagram",
+// 					URL:  "https://www.instagram.com/collegemusic",
+// 				},
+// 				{
+// 					Slug: "facebook",
+// 					URL:  "https://www.facebook.com/collegemusic",
+// 				},
+// 				{
+// 					Slug: "twitter",
+// 					URL:  "https://twitter.com/collegemusicyt",
+// 				},
+// 			},
+// 		},
 		// {
 		// 	Slug:  "lofi-code-beats",
 		// 	Name:  "Coding Beats",
@@ -385,35 +385,35 @@ func getLiveRadios() []liveRadio {
 		// 		},
 		// 	},
 		// },
-		// {
-		// 	Slug:  "steezyasfuck-coffee-show",
-		// 	Name:  "Steezy Coffee Shop",
-		// 	Owner: "STEEZYASFUCK",
-		// 	URL:   "https://youtu.be/-5KAN9_CzSA",
-		// 	Cards: []string{},
-		// 	Links: []socialLink{
-		// 		{
-		// 			Slug: "website",
-		// 			URL:  "https://www.stzzzy.com",
-		// 		},
-		// 		{
-		// 			Slug: "youtube",
-		// 			URL:  "https://youtu.be/-5KAN9_CzSA",
-		// 		},
-		// 		{
-		// 			Slug: "spotify",
-		// 			URL:  "https://open.spotify.com/playlist/2s9R059mmdc8kz6lrUqZZd",
-		// 		},
-		// 		{
-		// 			Slug: "instagram",
-		// 			URL:  "https://www.instagram.com/stzzyasfvck/",
-		// 		},
-		// 		{
-		// 			Slug: "twitter",
-		// 			URL:  "https://twitter.com/stzzyasfvck",
-		// 		},
-		// 	},
-		// },
+		{
+			Slug:  "steezyasfuck-coffee-show",
+			Name:  "Steezy Coffee Shop",
+			Owner: "STEEZYASFUCK",
+			URL:   "https://youtu.be/UI5NKkW8acM",
+			Cards: []string{},
+			Links: []socialLink{
+				{
+					Slug: "website",
+					URL:  "https://www.stzzzy.com",
+				},
+				{
+					Slug: "youtube",
+					URL:  "https://youtu.be/UI5NKkW8acM",
+				},
+				{
+					Slug: "spotify",
+					URL:  "https://open.spotify.com/playlist/2s9R059mmdc8kz6lrUqZZd",
+				},
+				{
+					Slug: "instagram",
+					URL:  "https://www.instagram.com/stzzyasfvck/",
+				},
+				{
+					Slug: "twitter",
+					URL:  "https://twitter.com/stzzyasfvck",
+				},
+			},
+		},
 		// {
 		// 	Slug:  "steezyasfuck-junky-fluff",
 		// 	Name:  "Steezy Junky Fluff",
@@ -443,41 +443,41 @@ func getLiveRadios() []liveRadio {
 		// 		},
 		// 	},
 		// },
-		//{
-		//	Slug:  "closedonsunday-pop-culture",
-		//	Name:  "Pop Culture Sunday",
-		//	Owner: "Closed on Sunday",
-		//	URL:   "https://youtu.be/pixAeRe2rk0",
-		//	Cards: []string{},
-		//	Links: []socialLink{
-		//		{
-		//			Slug: "youtube",
-		//			URL:  "https://youtu.be/pixAeRe2rk0",
-		//		},
-		//		{
-		//			Slug: "spotify",
-		//			URL:  "https://open.spotify.com/artist/1LwjR2mIm78OJRTYdkMLl3",
-		//		},
-		//		{
-		//			Slug: "discord",
-		//			URL:  "https://discord.com/invite/closedonsunday",
-		//		},
-		//		{
-		//			Slug: "instagram",
-		//			URL:  "https://www.instagram.com/closedonsundayy",
-		//		},
-		//	},
-		//},
 		{
-			Slug:  "closedonsunday-starwars",
-			Name:  "Star Wars Sunday",
+			Slug:  "closedonsunday-pop-culture",
+			Name:  "Pop Culture Sunday",
 			Owner: "Closed on Sunday",
-			URL:   "https://youtu.be/5D5b0-hfzno",
+			URL:   "https://youtu.be/7kdWLuuLiVI",
 			Cards: []string{},
 			Links: []socialLink{
 				{
 					Slug: "youtube",
-					URL:  "https://youtu.be/5D5b0-hfzno",
+					URL:  "https://youtu.be/7kdWLuuLiVI",
+				},
+				{
+					Slug: "spotify",
+					URL:  "https://open.spotify.com/artist/1LwjR2mIm78OJRTYdkMLl3",
+				},
+				{
+					Slug: "discord",
+					URL:  "https://discord.com/invite/closedonsunday",
+				},
+				{
+					Slug: "instagram",
+					URL:  "https://www.instagram.com/closedonsundayy",
+				},
+			},
+		},
+		{
+			Slug:  "closedonsunday-starwars",
+			Name:  "Star Wars Sunday",
+			Owner: "Closed on Sunday",
+			URL:   "https://youtu.be/kkko7QKvL1s",
+			Cards: []string{},
+			Links: []socialLink{
+				{
+					Slug: "youtube",
+					URL:  "https://youtu.be/kkko7QKvL1s",
 				},
 				{
 					Slug: "spotify",
@@ -573,7 +573,7 @@ func getLiveRadios() []liveRadio {
 			Slug:  "dreamhop",
 			Name:  "Dreamhop",
 			Owner: "Dreamhop Music",
-			URL:   "https://youtu.be/wkhLHTmS_GI",
+			URL:   "https://youtu.be/D5bqo8lcny4",
 			Cards: []string{},
 			Links: []socialLink{
 				{
@@ -582,7 +582,7 @@ func getLiveRadios() []liveRadio {
 				},
 				{
 					Slug: "youtube",
-					URL:  "https://youtu.be/wkhLHTmS_GI",
+					URL:  "https://youtu.be/D5bqo8lcny4",
 				},
 				{
 					Slug: "spotify",
