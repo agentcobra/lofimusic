@@ -66,14 +66,11 @@ func (n *nav) Render() app.UI {
 				Middle().
 				Content(
 					app.Header().
-						Body(
-							app.A().
-								Class("hApp").
-								Class("focus").
-								Class("glow").
-								Href("/").
-								Text("Lofimusic"),
-						),
+                    Body(
+                        app.Img().
+                            Src("/web/k3kd7i.png").
+                            Alt("Lofimusic"),
+                    ),
 				),
 			app.Nav().
 				Class("nav-content").

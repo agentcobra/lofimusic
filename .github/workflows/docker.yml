@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - app-go_v10
+      - dev
 
 jobs:
   lint:
